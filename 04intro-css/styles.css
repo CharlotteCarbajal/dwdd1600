@@ -1,0 +1,178 @@
+/* ========================================
+   PIZZA RECIPES HUB - STYLESHEET
+   Author: Student
+   Course: DWDD1600
+   ======================================== */
+
+/* Import Google Font - Montserrat (clean and modern) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* ----- BODY STYLING ----- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFF8F0;  /* warm cream background */
+    color: #2C1810;  /* dark brown for text */
+    margin: 0;
+    padding: 20px;
+}
+
+/* ----- HEADING 1 STYLING ----- */
+h1 {
+    font-size: 42px;
+    font-weight: 700;  /* bold weight */
+    color: #C0392B;  /* pizza red */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ----- HEADING 2 STYLING ----- */
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #E67E22;  /* orange like cheese */
+    border-bottom: 2px solid #E67E22;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+/* ----- PARAGRAPH STYLING ----- */
+p {
+    font-size: 16px;
+    font-weight: 400;  /* regular weight */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* ----- NAVIGATION BAR (Horizontal Flexbox) ----- */
+nav {
+    background-color: #C0392B;  /* pizza red background */
+    padding: 10px 20px;
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style-type: none;  /* remove default bullets */
+    margin: 0;
+    padding: 0;
+    display: flex;  /* makes navigation horizontal */
+    justify-content: center;
+    gap: 40px;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;  /* remove underline */
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 14px 20px;  /* ensures 48px tall (14+14+18=46px approx) */
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    background-color: #A93226;
+    border-radius: 30px;
+    color: #FFD700;  /* gold on hover */
+}
+
+/* ----- MAIN CONTENT CONTAINER ----- */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ----- UNORDERED LIST (topping list) ----- */
+ul {
+    list-style-type: circle;  /* changes bullet from disc to circle */
+    padding-left: 30px;
+    margin: 15px 0;
+}
+
+ul li {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* ----- ORDERED LIST (steps list) ----- */
+ol {
+    padding-left: 30px;
+    margin: 15px 0;
+}
+
+ol li {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* ----- DEFINITION LIST STYLING ----- */
+dl {
+    background-color: #FFF3E0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+dt {
+    font-weight: 700;
+    color: #C0392B;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* ----- BORDER EXAMPLE ----- */
+address {
+    border: 2px solid #E67E22;  /* thickness, type, color */
+    border-radius: 12px;  /* rounded corners */
+    padding: 15px;
+    background-color: #FFF8F0;
+    margin: 20px 0;
+    font-style: normal;
+}
+
+/* ----- HOVER EFFECT FOR LINKS INSIDE CONTENT ----- */
+a[target="_blank"] {
+    color: #C0392B;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a[target="_blank"]:hover {
+    color: #E67E22;
+    text-decoration: underline;
+}
+
+/* ----- FOOTER STYLING ----- */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 14px;
+    color: #7F8C8D;
+    border-top: 1px solid #DDD;
+}
+
+/* ----- SPAN (site name) STYLING ----- */
+header span {
+    font-size: 32px;
+    font-weight: 700;
+    color: #C0392B;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
